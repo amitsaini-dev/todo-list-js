@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background-color: black;
     color: white;
 }
-.heading{
+.heading {
     text-align: center;
     margin: 1.5rem;
 }
-.text-area{
+.text-area {
     margin: 2.5rem;
-    border: 2px solid #00ffff; 
+    border: 2px solid #00ffff;
     background-color: transparent;
     color: #00ffff;
     padding: 10px 20px;
@@ -20,8 +20,9 @@ body{
     cursor: pointer;
     border-radius: 0.5rem;
 }
+
 #add-task-btn {
-    border: 2px solid #00ffff; 
+    border: 2px solid #00ffff;
     background-color: transparent;
     color: #00ffff;
     padding: 10px 20px;
@@ -29,13 +30,13 @@ body{
     cursor: pointer;
     border-radius: 0.5rem;
 }
-.task-list{
+.task-list {
     margin: 2.5rem;
 }
-.task-list li{
+.task-list li {
     margin: 1rem;
 }
-.del-task{
+.del-task {
     margin-left: 0.3rem;
     background-color: transparent;
     color: white;
@@ -44,7 +45,7 @@ body{
     border-radius: 0.5rem;
     font-size: small;
 }
-.del-task:hover{
+.del-task:hover {
     background-color: red;
     color: white;
 }
