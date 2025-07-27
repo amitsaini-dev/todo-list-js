@@ -20,7 +20,7 @@ body{
     cursor: pointer;
     border-radius: 0.5rem;
 }
-button {
+#add-task-btn {
     border: 2px solid #00ffff; 
     background-color: transparent;
     color: #00ffff;
@@ -31,4 +31,20 @@ button {
 }
 .task-list{
     margin: 2.5rem;
+}
+.task-list li{
+    margin: 1rem;
+}
+.del-task{
+    margin-left: 0.3rem;
+    background-color: transparent;
+    color: white;
+    padding: 0.2rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-size: small;
+}
+.del-task:hover{
+    background-color: red;
+    color: white;
 }
