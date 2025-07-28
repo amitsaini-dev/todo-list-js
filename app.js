@@ -7,6 +7,8 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 for (task of tasks) {
     let li = document.createElement("li");
     li.innerText = task;
+    let checkBox = addCheckBox();
+    li.appendChild(checkBox);
     let deleteBtn = addBtn();
     li.appendChild(deleteBtn);
     list.appendChild(li);
@@ -23,11 +25,13 @@ addTaskBtn.addEventListener("click", function () {
     li.innerText = input.value;
     list.appendChild(li);
 
+    let checkBox = addCheckBox();
+    li.appendChild(checkBox);
+
     let deleteBtn = addBtn();
     li.appendChild(deleteBtn);
 
     input.value = "";
-    console.log(task);
 
 })
 
@@ -49,4 +53,15 @@ list.addEventListener("click", function (details) {
         localStorage.setItem("tasks", JSON.stringify(tasks));
         listItem.remove();
     }
+    else if (details.target.nodeName === "INPUT" && details.target.type === "checkbox") {
+        let listItem = details.target.parentElement;
+        listItem.classList.toggle("strike");
+    }
 })
+
+function addCheckBox() {
+    let checkBox = document.createElement("input");
+    checkBox.type = "checkbox";
+    checkBox.classList.add("checkbox");
+    return checkBox;
+}

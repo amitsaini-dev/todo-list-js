@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: black;
     color: white;
 }
+
 .heading {
     text-align: center;
     margin: 1.5rem;
 }
+
 .text-area {
     margin: 2.5rem;
     border: 2px solid #00ffff;
@@ -30,12 +33,15 @@ body {
     cursor: pointer;
     border-radius: 0.5rem;
 }
+
 .task-list {
     margin: 2.5rem;
 }
+
 .task-list li {
     margin: 1rem;
 }
+
 .del-task {
     margin-left: 0.3rem;
     background-color: transparent;
@@ -45,7 +51,17 @@ body {
     border-radius: 0.5rem;
     font-size: small;
 }
+
 .del-task:hover {
     background-color: red;
     color: white;
+}
+
+.checkbox {
+    margin: 0.5rem;
+    transform: scale(1.5);
+}
+
+.strike {
+    text-decoration: line-through;
 }
